@@ -144,3 +144,6 @@ dmypy.json
 
 # OS X
 .DS_Store
+
+#local db
+database.db

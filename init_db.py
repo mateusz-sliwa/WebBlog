@@ -1,5 +1,7 @@
 import sqlite3
 
+
+#Query to insert test posts
 connection = sqlite3.connect('database.db')
 
 
