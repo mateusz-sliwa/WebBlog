@@ -147,3 +147,16 @@ dmypy.json
 
 #local db
 database.db
+schema.sql
+
+#firebase config
+fbconfig.json
+fbAdminConfig.json
+
+# In development files
+login.html
+register.html
+result.html
+signup.html
+welcome.css
+static/css

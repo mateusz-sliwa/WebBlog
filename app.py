@@ -2,6 +2,10 @@ from flask import Flask, render_template, request, url_for, flash, redirect
 from werkzeug.exceptions import abort
 import sqlite3
 import os
+import json
+import pyrebase
+import firebase_admin
+from firebase_admin import credentials, auth
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get('app_secret')
@@ -84,3 +88,7 @@ def delete(id):
     conn.close()
     flash('"{}" was successfully deleted!'.format(post['title']))
     return redirect(url_for('index'))
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
